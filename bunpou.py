@@ -58,15 +58,13 @@ forbun_def()
 ## ６ 引数を使う関数の使い方
 #以下のようにhikisuuの部分が引数です。引数は関数の外から変数を関数内に渡すことができます。
 #このような引数を使う関数を作成してみよう。
-def namae_kensaku(cal_mei):
+def search_name(character_name):
     name = ["たんじろう","ぎゆう","ねずこ","むざん"]
-    for cal in name:
-        if cal_mei == cal: 
-           print(cal_mei + 'は含まれます。')
-        else:
-           print(cal_mei + 'は含まれません。') 
-        break
+    if character_name in name: 
+        print(character_name + 'は含まれます。')
+    else:
+        print(character_name+ 'は含まれません。') 
 
-namae_kensaku('ぜんいつ')
+search_name('むざん')
 
 
